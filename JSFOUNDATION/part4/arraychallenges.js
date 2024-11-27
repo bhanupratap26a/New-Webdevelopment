@@ -42,3 +42,15 @@ let bike = ["pulsar-150", "RS200", "NS400", "BajajScoter"];
 let menuLength = bike.length;
 
 console.log(menuLength);
+
+let Visited = [
+  "Mumbai",
+  "Sydney",
+  "HonkKong",
+  "Brazil",
+  "Usa",
+  "Singapore",
+  "Germany",
+];
+let isVisitedornot = Visited.includes("Usa");
+console.log(isVisitedornot);
