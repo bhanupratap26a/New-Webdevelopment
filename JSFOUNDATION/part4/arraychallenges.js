@@ -29,5 +29,16 @@ let copyTea1 = popularTea.filter((element) => vowels.includes(element[0]));
 
 console.log(copyTea);
 console.log(copyTea1);
-console.log(...copyTea2);
+console.log([...copyTea2]);
 // console.log(popularTea);
+
+let cars = ["BMW", "PAGANI", "LAMBO"];
+let cars1 = ["G-wagon R", "Aulto"];
+
+let mergeCars = cars.concat(cars1);
+console.log(mergeCars);
+
+let bike = ["pulsar-150", "RS200", "NS400", "BajajScoter"];
+let menuLength = bike.length;
+
+console.log(menuLength);
