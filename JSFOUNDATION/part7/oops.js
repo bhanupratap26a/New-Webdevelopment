@@ -29,3 +29,29 @@ let myArray = [1, 544, "Hello", 99];
 console.log(myArray.Doon());
 let myNewArray = [1, 544, "Hello", 99, 100];
 console.log(myNewArray.Doon());
+
+let animal = new Animal("Dog");
+console.log(animal.speak());
+
+class Vehicle {
+  constructor(make, model) {
+    this.make = make;
+    this.model = model;
+  }
+  start() {
+    return `${this.model} is a car from ${this.make}`;
+  }
+}
+
+class Car extends Vehicle {
+  drive() {
+    return `${this.make} is inherited from Vehicle`;
+  }
+}
+
+let myCar = new Car("Pagani", "Huayra");
+console.log(myCar.start());
+console.log(myCar.drive());
+
+let vehicle1 = new Vehicle("Lamborghini", "Aventedor");
+console.log(vehicle1.model);
