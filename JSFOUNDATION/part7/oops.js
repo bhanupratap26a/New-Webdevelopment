@@ -55,3 +55,70 @@ console.log(myCar.drive());
 
 let vehicle1 = new Vehicle("Lamborghini", "Aventedor");
 console.log(vehicle1.model);
+
+// Encapsulation
+
+class Account {
+  #balance = 0;
+
+  Deposit(Amount) {
+    this.#balance += Amount;
+    return this.#balance;
+  }
+  getbalance() {
+    return `$ ${this.#balance}`;
+  }
+}
+
+let account = new Account();
+account.Deposit(1000000);
+console.log(account.getbalance());
+
+// Abstraction
+
+class coffeeMachine {
+  start() {
+    return `Starting coffee machine....`;
+  }
+
+  brew() {
+    return `Brewing Coffee.....`;
+  }
+  pressStartButton() {
+    return `${this.start()} + ${this.brew()}`;
+  }
+}
+
+let makeCoffee = new coffeeMachine();
+console.log(makeCoffee.pressStartButton());
+
+// polymorphism
+
+class Bird {
+  fly() {
+    return `Bird can fly`;
+  }
+}
+
+class Ostrich extends Bird {
+  fly() {
+    return `Ostrich Can't fly`;
+  }
+}
+
+let bird = new Bird();
+console.log(bird.fly());
+
+let ostrich = new Ostrich();
+console.log(ostrich.fly());
+
+//Static Method
+class Calculator {
+  static Add(a, b) {
+    return a + b;
+  }
+}
+// let add = new Calculator();
+console.log(Calculator.Add(20, 30));
+
+
