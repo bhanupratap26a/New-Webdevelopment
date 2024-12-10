@@ -34,3 +34,36 @@ document
     let removeChild = document.getElementById("taskList");
     removeChild.lastElementChild.remove();
   });
+
+document
+  .getElementById("clickMeButton")
+  .addEventListener("dblclick", function () {
+    alert("Hello Js");
+  });
+
+document.getElementById("teaList").addEventListener("click", function (event) {
+  if (event.target && event.target.matches(".teaItem")) {
+    alert("You Have Selected : " + event.target.textContent);
+  }
+});
+document
+  .getElementById("feedbackForm")
+  .addEventListener("click", function (event) {
+    event.preventDefault();
+    let feedBack = document.getElementById("feedbackInput").value;
+    let display = document.getElementById("feedbackDisplay");
+    display.textContent = `Your Feedback is : ${feedBack}`;
+    display.style.color = "yellow";
+  });
+
+document.addEventListener("DOMContentLoaded", function () {
+  document.getElementById("domStatus").textContent = "DOM fully Loaded";
+});
+
+document
+  .getElementById("toggleHighlight")
+  .addEventListener("click", function () {
+    let description = document.getElementById("descriptionText");
+    console.log(description);
+    description.classList.toggle("highlight");
+  });
