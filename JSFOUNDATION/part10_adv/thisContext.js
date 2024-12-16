@@ -11,3 +11,5 @@ const bindFunction = person.greet.bind({ name: "John" });
 bindFunction();
 
 // bind,apply, call
+
+console.log("Hello");
