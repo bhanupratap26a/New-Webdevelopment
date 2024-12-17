@@ -90,6 +90,39 @@
         background-color: #14961f;
         border-radius: 8px;
       }
+      .nav3 {
+        background: #202020;
+        padding: 10px;
+      }
+      .nav3 ul {
+        padding: 0px;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+      }
+      .nav3 ul li {
+        list-style-type: none;
+      }
+      .nav3 .drop1 .drop ul {
+        display: inline;
+      }
+
+      .nav3 .drop1 .drop {
+        display: none;
+        position: absolute;
+        padding: 10px 2px;
+        min-width: 60px;
+        background-color: #202020;
+        color: #fff;
+      }
+
+      .nav3 .drop1:hover .drop {
+        display: flex;
+      }
+
+      .nav3 ul li a {
+        text-decoration: none;
+      }
     </style>
     <title>Navbar</title>
   </head>
@@ -111,6 +144,24 @@
           <li><a href="#">About</a></li>
           <li><a href="#">Products</a></li>
           <li><button type="submit" class="login-btn">Login</button></li>
+        </ul>
+      </nav>
+      <h2>DropDown Effect</h2>
+      <nav class="nav3">
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li class="drop1">
+            <a href="#">About</a>
+            <div class="drop">
+              <ul>
+                <li>Feedback</li>
+                <li>Our Story</li>
+                <li>Seen</li>
+              </ul>
+            </div>
+          </li>
+          <li><a href="#">Products</a></li>
+          <li><button type="submit" class="btn3">Login</button></li>
         </ul>
       </nav>
     </div>
